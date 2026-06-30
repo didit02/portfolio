@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 94%;
+    --foreground: 0 0% 18%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 18%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 18%;
+    --primary: 350 90% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 97%;
+    --secondary-foreground: 0 0% 25%;
+    --muted: 0 0% 92%;
+    --muted-foreground: 0 0% 50%;
+    --accent: 350 90% 60%;
+    --accent-foreground: 0 0% 100%;
+    --timeline: 202 89% 73%;
+    --timeline-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 350 90% 60%;
+    --chart-1: 350 90% 60%;
+    --chart-2: 202 89% 73%;
+    --chart-3: 0 0% 20%;
+    --chart-4: 0 0% 100%;
+    --chart-5: 0 0% 70%;
+    --radius: 0.5rem;
+    --font-heading: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+    --font-body: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+    --font-display: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+    --sidebar-background: 0 0% 97%;
+    --sidebar-foreground: 0 0% 20%;
+    --sidebar-primary: 350 90% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 92%;
+    --sidebar-accent-foreground: 0 0% 20%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 350 90% 60%;
+  }
+
+  .dark {
+    --background: 220 60% 7%;
+    --foreground: 210 40% 98%;
+    --card: 220 45% 11%;
+    --card-foreground: 210 40% 98%;
+    --popover: 220 45% 11%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 350 90% 60%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 220 30% 16%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 220 20% 20%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 350 90% 60%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 220 20% 18%;
+    --input: 220 20% 18%;
+    --ring: 350 90% 60%;
+    --chart-1: 350 90% 60%;
+    --chart-2: 215 20% 65%;
+    --chart-3: 220 60% 7%;
+    --chart-4: 210 40% 98%;
+    --chart-5: 220 45% 11%;
+    --sidebar-background: 220 60% 7%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 350 90% 60%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 220 30% 16%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 220 20% 18%;
+    --sidebar-ring: 350 90% 60%;
+  }
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+    outline-color: hsl(var(--ring)/0.5);
+  }
+
+  body {
+    background: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: var(--font-body);
+  }
+
+  ::selection {
+    background: hsl(350 90% 60% / 0.3);
+    color: hsl(210 40% 98%);
+  }
+
+  .timeline-line {
+  background: hsl(var(--timeline));
+}
+
+.timeline-dot {
+  background: hsl(var(--timeline));
+  border: 3px solid white;
+}
+
+.timeline-date {
+  color: hsl(var(--timeline));
+}
+
+.timeline-title {
+  color: hsl(var(--timeline));
+}
+
+.btn-outline {
+  border: 2px solid #000;
+  color: #000;
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: #000;
+  color: #fff;
+}
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(220 60% 7%);
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(220 20% 20%);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(350 90% 60%);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
