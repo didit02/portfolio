@@ -2,7 +2,7 @@ export const profileData = {
   name: "Aditya Tri Ananta",
   title: "Electrical Engineer",
   subtitle: "Engineering Portfolio",
-  intro: "Designing the future of aerospace, one precision component at a time. From SpaceX Starship to Google Pixel — I bring engineering rigor to every project.",
+  intro: "Electrical Engineering graduate with hands-on experience in power plant operations and substation maintenance. Specialized in equipment reliability analysis, preventive maintenance planning, and high-voltage systems",
   linkedin: "https://www.linkedin.com/in/aditya-tri-ananta/",
   email: "adityatriananta@gmail.com",
 };

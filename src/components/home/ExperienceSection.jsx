@@ -73,9 +73,7 @@ function ExperienceCard({ exp, index }) {
 export default function ExperienceSection() {
   return (
     <section className="py-16 lg:py-20 relative">
-      {/* Vertical Line */}
-      <div className="absolute left-6 lg:left-12 top-0 bottom-0 w-px bg-border/30" />
-      
+            
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
