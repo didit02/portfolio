@@ -10,7 +10,8 @@ export default function HeroSection() {
       {/* Background Grid */}
       <div className="absolute inset-0 opacity-[0.03]" style={{
         backgroundImage: "linear-gradient(hsl(350 90% 60%) 1px, transparent 1px), linear-gradient(90deg, hsl(350 90% 60%) 1px, transparent 1px)",
-        backgroundSize: "60px 60px"
+        backgroundSize: "60px 60px",
+        pointerEvents: "none",
       }} />
       
       <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full pt-20">
