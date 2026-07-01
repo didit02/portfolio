@@ -115,60 +115,6 @@ export default function Resume() {
             )}
           </div>
 
-          {/* Info Box Below PDF */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="mt-8 grid md:grid-cols-2 gap-6"
-          >
-            {/* Download Info */}
-            <div className="border border-border/30 p-6 rounded-lg bg-card/30 backdrop-blur-sm hover:border-primary/30 transition-all duration-300">
-              <div className="flex items-start gap-4">
-                <Download className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-heading font-semibold mb-2">Download CV</h3>
-                  <p className="text-muted-foreground text-sm mb-4">
-                    Click the button below to download my CV as a PDF file for your records.
-                  </p>
-                  <button
-                    onClick={handleDownload}
-                    className="text-primary font-heading font-semibold text-xs uppercase tracking-[0.15em] hover:text-primary/80 transition-colors flex items-center gap-2"
-                  >
-                    Download Now <ExternalLink size={12} />
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            {/* Contact Info */}
-            <div className="border border-border/30 p-6 rounded-lg bg-card/30 backdrop-blur-sm hover:border-primary/30 transition-all duration-300">
-              <div className="flex items-start gap-4">
-                <FileText className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-heading font-semibold mb-2">Profile Information</h3>
-                  <div className="space-y-2 text-sm text-muted-foreground">
-                    <p>
-                      <span className="font-heading font-semibold text-primary">Email:</span>{" "}
-                      adityatriananta@gmail.com
-                    </p>
-                    <p>
-                      <span className="font-heading font-semibold text-primary">LinkedIn:</span>{" "}
-                      <a
-                        href="https://www.linkedin.com/in/aditya-tri-ananta"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-muted-foreground hover:underline"
-                      >
-                        aditya-tri-ananta
-                      </a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-
           {/* File Path Info */}
           {pdfError && (
             <motion.div
