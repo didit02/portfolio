@@ -27,7 +27,7 @@ export default function SoftwareSection() {
           </h2>
           {/* Description */}
           <p className="text-base leading-relaxed text-muted-foreground max-w-2xl">
-            A comprehensive toolkit of design, simulation, and analysis software tailored for mechanical and electrical engineering excellence.
+            A comprehensive toolkit of design, simulation, and analysis software tailored for power and electrical engineering excellence.
           </p>
         </motion.div>
 

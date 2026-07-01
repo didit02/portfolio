@@ -322,18 +322,16 @@ export const projects = [
 ];
 
 export const software = [
-  { name: "PVsyst", proficiency: 95 },
-  { name: "SolidWorks", proficiency: 98 },
-  { name: "Cx-One", proficiency: 85 },
+  { name: "PVsyst", proficiency: 90 },
+  { name: "SolidWorks", proficiency: 50 },
+  { name: "Cx-One", proficiency: 80 },
   { name: "Factory IO", proficiency: 80 },
   { name: "ETAP", proficiency: 90 },
   { name: "Proteus", proficiency: 85 },
   { name: "Arduino Ide", proficiency: 88 },
-  { name: "AutoCAD", proficiency: 82 },
+  { name: "AutoCAD", proficiency: 70 },
   { name: "HomerPro", proficiency: 75 },
-  { name: "QGIS", proficiency: 95 },
-  { name: "MoldFlow", proficiency: 70 },
-  { name: "LabVIEW", proficiency: 72 },
+  { name: "QGIS", proficiency: 70 },
 ];
 
 // ===== EXPERIENCE IMAGES =====
@@ -349,7 +347,7 @@ export const softwareWithImages = [
   {
     name: "PVsyst",
     image: "/foto/pvsyst.png",
-    proficiency: 95,
+    proficiency: 90,
   },
   {
     name: "Arduino Ide",
@@ -359,7 +357,7 @@ export const softwareWithImages = [
   {
     name: "Cx-One",
     image: "/foto/PLC.png",
-    proficiency: 85,
+    proficiency: 80,
   },
   {
     name: "Factory IO",
@@ -379,12 +377,12 @@ export const softwareWithImages = [
   {
     name: "QGIS",
     image: "/foto/QGIS.png",
-    proficiency: 95,
+    proficiency: 70,
   },
   {
     name: "AutoCAD",
     image: "/foto/AutoCAD.png",
-    proficiency: 82,
+    proficiency: 70,
   },
   {
     name: "HomerPro",
@@ -394,17 +392,7 @@ export const softwareWithImages = [
   {
     name: "SolidWorks",
     image: "/foto/pngwing.com.png",
-    proficiency: 98,
-  },
-  {
-    name: "-",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Autodesk_Logo.svg/200px-Autodesk_Logo.svg.png",
-    proficiency: 70,
-  },
-  {
-    name: "-",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/National_Instruments_Logo.svg/200px-National_Instruments_Logo.svg.png",
-    proficiency: 72,
+    proficiency: 50,
   },
 ];
 
