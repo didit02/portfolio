@@ -6,8 +6,8 @@ export default function Resume() {
   const [isLoading, setIsLoading] = useState(true);
   const [pdfError, setPdfError] = useState(false);
 
-  // Path yang benar - gunakan absolute path dengan ?url
-  const pdfPath = "/foto/Aditya Tri Ananta-resume.pdf?url";
+  // Path dari public folder
+  const pdfPath = "/foto/Aditya Tri Ananta-resume.pdf";
 
   const handleDownload = () => {
     try {
@@ -85,7 +85,7 @@ export default function Resume() {
                   <AlertCircle className="w-16 h-16 text-red-500/60 mx-auto mb-4" />
                   <h3 className="text-xl font-heading font-semibold mb-2">PDF Not Found</h3>
                   <p className="text-muted-foreground mb-6 max-w-md">
-                    The CV file could not be loaded. Make sure the file is in the <code className="font-mono bg-card/50 px-2 py-1 rounded">foto/</code> folder.
+                    The CV file could not be loaded. Make sure the file is in the <code className="font-mono bg-card/50 px-2 py-1 rounded">public/foto/</code> folder.
                   </p>
                   <a
                     href={pdfPath}
@@ -186,14 +186,14 @@ export default function Resume() {
                   <div className="text-sm text-muted-foreground space-y-2">
                     <p>File location should be:</p>
                     <code className="block font-mono bg-card/50 px-3 py-2 rounded border border-yellow-500/20 break-all">
-                      project/foto/Aditya Tri Ananta-resume.pdf
+                      project/public/foto/Aditya Tri Ananta-resume.pdf
                     </code>
                     <p className="mt-3">Make sure:</p>
                     <ul className="list-disc list-inside space-y-1 ml-2">
-                      <li>File is in <code className="font-mono bg-card/50 px-1">foto/</code> folder at root level</li>
-                      <li>Filename matches exactly: <code className="font-mono bg-card/50 px-1">Aditya Tri Ananta-resume.pdf</code></li>
-                      <li>File exists and is readable</li>
-                      <li>Restart dev server after moving file</li>
+                      <li>File is in <code className="font-mono bg-card/50 px-1">public/foto/</code> folder</li>
+                      <li>Not in <code className="font-mono bg-card/50 px-1">src/</code> folder</li>
+                      <li>Filename is correct</li>
+                      <li>Restart dev server after moving files</li>
                     </ul>
                   </div>
                 </div>

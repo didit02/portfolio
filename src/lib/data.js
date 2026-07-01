@@ -336,64 +336,64 @@ export const software = [
   { name: "LabVIEW", proficiency: 72 },
 ];
 
-// ===== EXPERIENCE IMAGES - ABSOLUTE PATHS WITH ?url =====
+// ===== EXPERIENCE IMAGES =====
 export const experienceImages = {
-  "PLNIP": "/foto/PLN Indonesia Power.png?url",
-  "S2P": "/foto/S2P.png?url",
-  "PLN": "/foto/PLN.png?url",
-  "CV": "/foto/CV.png?url",
+  "PLNIP": "/foto/PLN Indonesia Power.png",
+  "S2P": "/foto/S2P.png",
+  "PLN": "/foto/PLN.png",
+  "CV": "/foto/CV.png",
 };
 
-// ===== SOFTWARE WITH IMAGES - ABSOLUTE PATHS WITH ?url =====
+// ===== SOFTWARE WITH IMAGES =====
 export const softwareWithImages = [
   {
     name: "PVsyst",
-    image: "/foto/pvsyst.png?url",
+    image: "/foto/pvsyst.png",
     proficiency: 95,
   },
   {
     name: "Arduino Ide",
-    image: "/foto/Arduino.png?url",
+    image: "/foto/Arduino.png",
     proficiency: 88,
   },
   {
     name: "Cx-One",
-    image: "/foto/PLC.png?url",
+    image: "/foto/PLC.png",
     proficiency: 85,
   },
   {
     name: "Factory IO",
-    image: "/foto/Factory IO.png?url",
+    image: "/foto/Factory IO.png",
     proficiency: 80,
   },
   {
     name: "ETAP",
-    image: "/foto/ETAP.png?url",
+    image: "/foto/ETAP.png",
     proficiency: 90,
   },
   {
     name: "Proteus",
-    image: "/foto/Proteus.png?url",
+    image: "/foto/Proteus.png",
     proficiency: 85,
   },
   {
     name: "QGIS",
-    image: "/foto/QGIS.png?url",
+    image: "/foto/QGIS.png",
     proficiency: 95,
   },
   {
     name: "AutoCAD",
-    image: "/foto/AutoCAD.png?url",
+    image: "/foto/AutoCAD.png",
     proficiency: 82,
   },
   {
     name: "HomerPro",
-    image: "/foto/HomerPro.png?url",
+    image: "/foto/HomerPro.png",
     proficiency: 75,
   },
   {
     name: "SolidWorks",
-    image: "/foto/pngwing.com.png?url",
+    image: "/foto/pngwing.com.png",
     proficiency: 98,
   },
   {
@@ -408,4 +408,4 @@ export const softwareWithImages = [
   },
 ];
 
-export const profileImage = "/foto/aku.png?url";
+export const profileImage = "/foto/aku.png";
