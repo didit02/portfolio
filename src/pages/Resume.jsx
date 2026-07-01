@@ -6,15 +6,14 @@ export default function Resume() {
   const [isLoading, setIsLoading] = useState(true);
   const [pdfError, setPdfError] = useState(false);
 
-  // Path yang benar - ambil dari folder foto
-  // PENTING: Gunakan path yang SAMA untuk iframe dan download
-  const pdfPath = "foto/Aditya Tri Ananta-resume.pdf";
+  // Path yang benar - gunakan absolute path dengan ?url
+  const pdfPath = "/foto/Aditya Tri Ananta-resume.pdf?url";
 
   const handleDownload = () => {
     try {
       const link = document.createElement("a");
-      link.href = pdfPath; // Gunakan path yang sama
-      link.download = "foto/Aditya Tri Ananta-resume.pdf";
+      link.href = pdfPath;
+      link.download = "Aditya_Tri_Ananta_Resume.pdf";
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -187,13 +186,13 @@ export default function Resume() {
                   <div className="text-sm text-muted-foreground space-y-2">
                     <p>File location should be:</p>
                     <code className="block font-mono bg-card/50 px-3 py-2 rounded border border-yellow-500/20 break-all">
-                      project/foto/CV_Aditya_Tri_Ananta.pdf
+                      project/foto/Aditya Tri Ananta-resume.pdf
                     </code>
                     <p className="mt-3">Make sure:</p>
                     <ul className="list-disc list-inside space-y-1 ml-2">
-                      <li>Filename uses underscore: <code className="font-mono bg-card/50 px-1">CV_Aditya_Tri_Ananta.pdf</code></li>
-                      <li>NO spaces in filename</li>
-                      <li>File is in <code className="font-mono bg-card/50 px-1">foto/</code> folder</li>
+                      <li>File is in <code className="font-mono bg-card/50 px-1">foto/</code> folder at root level</li>
+                      <li>Filename matches exactly: <code className="font-mono bg-card/50 px-1">Aditya Tri Ananta-resume.pdf</code></li>
+                      <li>File exists and is readable</li>
                       <li>Restart dev server after moving file</li>
                     </ul>
                   </div>
