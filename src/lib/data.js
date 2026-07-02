@@ -4,7 +4,7 @@ export const profileData = {
   subtitle: "Engineering Portfolio",
   intro: "Electrical Engineering graduate with hands-on experience in power plant operations and substation maintenance. Specialized in equipment reliability analysis, preventive maintenance planning, and high-voltage systems",
   linkedin: "https://www.linkedin.com/in/aditya-tri-ananta/",
-  email: "adityatriananta@gmail.com",
+  email: "adityatriananta02@gmail.com",
 };
 
 export const experiences = [

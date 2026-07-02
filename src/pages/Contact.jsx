@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Send, Linkedin, Github, Mail, MapPin } from "lucide-react";
+import { Send, Linkedin, Mail, MapPin } from "lucide-react";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -211,7 +211,7 @@ export default function Contact() {
 
               {/* Email */}
               <a
-                href="mailto:adityatriananta@gmail.com"
+                href="mailto:adityatriananta02@gmail.com"
                 className="flex items-center gap-4 text-muted-foreground hover:text-foreground transition-colors duration-300 group"
               >
                 <div className="w-10 h-10 border border-border/30 flex items-center justify-center group-hover:border-primary/50 group-hover:bg-primary/10 transition-colors duration-300 rounded">
@@ -222,7 +222,7 @@ export default function Contact() {
                     Email
                   </div>
                   <span className="text-sm text-foreground">
-                    adityatriananta@gmail.com
+                    adityatriananta02@gmail.com
                   </span>
                 </div>
               </a>
@@ -243,26 +243,6 @@ export default function Contact() {
                   </div>
                   <span className="text-sm text-foreground">
                     aditya-tri-ananta
-                  </span>
-                </div>
-              </a>
-
-              {/* GitHub */}
-              <a
-                href="https://github.com/didit02"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-4 text-muted-foreground hover:text-foreground transition-colors duration-300 group"
-              >
-                <div className="w-10 h-10 border border-border/30 flex items-center justify-center group-hover:border-primary/50 group-hover:bg-primary/10 transition-colors duration-300 rounded">
-                  <Github size={16} className="group-hover:text-primary transition-colors duration-300" />
-                </div>
-                <div>
-                  <div className="font-heading font-semibold text-xs text-muted-foreground/60 tracking-[0.05em] uppercase mb-0.5">
-                    GitHub
-                  </div>
-                  <span className="text-sm text-foreground">
-                    didit02
                   </span>
                 </div>
               </a>
